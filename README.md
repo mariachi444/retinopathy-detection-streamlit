@@ -5,7 +5,7 @@ Web app for diabetic retinopathy classification and lesion detection using Effic
 
 ## Overview
 
-This project was developed as my final project for my Biomedical Engineering degree.  
+This project was developed as part of an assignment for my Biomedical Engineering degree.  
 It uses deep learning to detect diabetic retinopathy by combining image classification and lesion detection in a simple web interface.
 
 # What does the app do?
