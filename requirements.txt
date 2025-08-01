@@ -5,3 +5,4 @@ opencv-python-headless
 pillow
 ultralytics
 matplotlib
+scikit-learn
