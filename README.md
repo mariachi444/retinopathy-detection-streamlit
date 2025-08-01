@@ -10,7 +10,6 @@ This application allows classification of the diabetic retinopathy severity from
   - Provides understandable interpretations for non-technical users.
 
 ## How to try it?
-You can use it directly from your browser (no installation needed) via Streamlit Cloud.
 
 ### Requirements if you want to run it locally  
 Install dependencies with:
