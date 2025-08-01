@@ -19,7 +19,7 @@ Navigate to the created folder using:
 cd retinopathy-detection-streamlit
 ```
 
-**Note:** It is recommended to create a virtual environment before installing the dependencies.  
+**Important:** It is recommended to create a virtual environment before installing the dependencies.  
 This helps to keep your Python packages organized and avoids conflicts between projects.
 
 You can create and activate a virtual environment with:
