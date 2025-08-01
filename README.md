@@ -1,10 +1,16 @@
 # retinopathy-detection-streamlit
 Web app for diabetic retinopathy classification and lesion detection using EfficientNetB4 and YOLOv8, deployed with Streamlit.
 
+## Overview
+
+## Overview
+
+This project was developed as my final project for my Biomedical Engineering degree.  
+It uses deep learning to detect diabetic retinopathy by combining image classification and lesion detection in a simple web interface.
+
 # What does the app do?
   - Classifies the degree of eye damage (5 levels of retinopathy) using an _**EfficientNet**_-based classification model.
   - Detects specific lesions (exudates, hemorrhages, optic disc, etc.) using _**YOLOv8**_.
-  - Visually displays predictions over the uploaded image.
   - Provides understandable interpretations for non-technical users.
 
 ## How to try it?
@@ -53,4 +59,24 @@ Then run:
 streamlit run app.py
 ```
 
+
+
+## TODOs
+- [ ] Improve EfficientNet classification accuracy
+- [ ] Improve YOLOv8 lesion detection accuracy  
+- [ ] Deploy to Streamlit Cloud
+
+## Limitations
+
+- Only supports single-image input; batch processing is not available.
+- The model was trained only on the APTOS 2019 dataset and **may not** generalize correctly to other image sources.
+- This app currently doesn’t support a multilingual interface, and there are no plans to add one.
+
+
+
+
+
+## License
+
+Feel free to use, modify, or share any part of this project as you wish — no permission or credit is required.
 
