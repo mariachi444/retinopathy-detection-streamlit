@@ -1,8 +1,6 @@
 # retinopathy-detection-streamlit
 Web app for diabetic retinopathy classification and lesion detection using EfficientNetB4 and YOLOv8, deployed with Streamlit.
 
-This application allows classification of the diabetic retinopathy severity from fundus images and detects lesions using a YOLOv8 model.
-
 # What does the app do?
   - Classifies the degree of eye damage (5 levels of retinopathy) using an _**EfficientNet**_-based classification model.
   - Detects specific lesions (exudates, hemorrhages, optic disc, etc.) using _**YOLOv8**_.
