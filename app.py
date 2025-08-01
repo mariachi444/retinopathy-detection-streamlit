@@ -38,6 +38,11 @@ def crop_image_from_gray(img, tol=7):
 def enhance_image(img):
     img = crop_image_from_gray(img)
     img = cv2.resize(img, (IMG_SIZE, IMG_SIZE))
+    # Forzar 3 canales si la imagen quedó en escala de grises
+    if len(img.shape) == 2:  # solo altura x ancho
+        img = cv2.cvtColor(img, cv2.COLOR_GRAY2RGB)
+    elif img.shape[2] == 1:  # canal único
+        img = cv2.cvtColor(img, cv2.COLOR_GRAY2RGB)
     img = cv2.addWeighted(img, 4, cv2.GaussianBlur(img, (0, 0), 10), -4, 128)
     return img
 
@@ -135,7 +140,7 @@ if uploaded_file:
         # Mostrar gráfico de barras de lesiones
         st.markdown("#### 📊 Distribución de lesiones")
         fig, ax = plt.subplots()
-        ax.bar(lesion_counts.keys(), lesion_counts.values(), color='teal')
+        ax.bar(list(lesion_counts.keys()), list(lesion_counts.values()), color='teal')
         ax.set_ylabel("Cantidad")
         ax.set_title("Lesiones detectadas por tipo")
         plt.xticks(rotation=45)
