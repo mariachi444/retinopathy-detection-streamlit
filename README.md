@@ -69,7 +69,7 @@ streamlit run app.py
 ## Limitations
 
 - Only supports single-image input; batch processing is not available.
-- The model was trained only on the APTOS 2019 dataset and **may not** generalize correctly to other image sources.
+- The classification model was trained only on the APTOS 2019 dataset and **may not** generalize correctly to other image sources.
 - This app currently doesn’t support a multilingual interface, and there are no plans to add one.
 
 
